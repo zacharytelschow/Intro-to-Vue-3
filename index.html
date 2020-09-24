@@ -14,8 +14,11 @@
       
       <div class="product-display">
         <div class="product-container">
+          <a :href="url" target="_blank">Search For Things</a>
           <div class="product-image">
-            <!-- image goes here -->
+            <img v-bind:src="image" /> 
+            <!-- Alternate syntax -->
+            <img :src="image" /> 
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
